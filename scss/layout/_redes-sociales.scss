@@ -1,0 +1,23 @@
+.redes-sociales{
+    position: absolute;
+    top: 65%;
+    left: 69%;
+    display: flex;
+
+    a{
+        img{
+            width: 55px;
+            height: 55px;
+            margin: 5px;
+            border-bottom: 1px solid #ffffff;
+            margin: 15px;
+        }
+    }
+    
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+    
+}

@@ -1,0 +1,22 @@
+.spam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    gap: 16px;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #2c2219;
+    border-bottom: 1px solid #ffffff;
+
+    a{
+        color: #ffffff;
+        background-color: #0e7490;
+        padding: 10px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        border-bottom: 2px solid #ffffff;
+    }
+}

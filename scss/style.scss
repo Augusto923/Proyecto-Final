@@ -1,0 +1,65 @@
+// Base
+
+@import "./base/reset.scss";
+
+//Layout
+
+/*NAV DE LA PAGINA*/
+@import "./layout/_header";
+
+/*ESTE ES EL MENU HAMBURGUESA*/
+@import "./layout/_menu-otros";
+
+/*SECTIÓN DE LA PARTE PRINCIPAL*/
+@import "./layout/_section";
+
+/*TEXTO Y SUBTITULO*/
+@import "./layout/_texto-superpuesto";
+
+/*REDES SOCIALES DEL TITULO*/
+@import "./layout/_redes-sociales";
+
+/* PRIMER LLAMADO DE ATENCIÓN*/
+@import "./layout/_spam";
+
+/* TRANSICIÓN DEL BOTÓN*/
+@import "./layout/_boton-reservar";
+
+/* TITULO / PELUQUEROS DE CONFIANZA*/
+@import "./layout/_peluqueros";
+
+
+/* CAJA DE LOS INTEGRANTES & USO DE GRID*/
+@import "./layout/_integrante";
+
+/* PARTE SUPERIOR DE LA IMAGEN*/
+@import "./layout/_sobre-bardhall";
+
+/* IMAGEN SOBRE BARDHALL*/
+@import "./layout/_sobre-img";
+
+/* LLAMADO DE ATENCIÓN*/
+@import "./layout/_segundo-spam";
+
+/* PARTE SUPERIOR DEL FOOTER*/
+@import "./layout/_footer-top";
+
+/* REDES SOCIALES EN FOOTER */
+@import "./layout/_redes-sociales-footer";
+
+/*TITULO DEL FOOTER*/
+@import "./layout/_title-footer";
+
+/*FOOTER BOTTOM / PARTE PROFUNDA DEL FOOTER*/
+@import "./layout/_footer-bottom";
+
+
+//MEDIA QUERIES
+
+/* Dispositivos pequeños (Celulares) */
+@import "./media-queries/_media_mobile_index 320";
+
+@import "./media-queries/_media_desktop_index 1440";
+
+$Background-Color: #18181b;
+$Color-orange: #d97706;
