@@ -1,65 +1,23 @@
 // Base
+@use "./base/reset" as reset;
 
-@import "./base/reset.scss";
+// Layout
 
-//Layout
+/* NAV DE LA PAGINA */
+@use "./estructura/header" as header;
 
-/*NAV DE LA PAGINA*/
-@import "./layout/_header";
+@use "./components/boton-reservar" as botton;
 
-/*ESTE ES EL MENU HAMBURGUESA*/
-@import "./layout/_menu-otros";
+/* SECCIÓN DE LA PARTE PRINCIPAL */
+@use "./page/principal" as pagina;
 
-/*SECTIÓN DE LA PARTE PRINCIPAL*/
-@import "./layout/_section";
+/* FOOTER PIE DE PÁGINA */
+@use "./estructura/footer.scss" as footer;
 
-/*TEXTO Y SUBTITULO*/
-@import "./layout/_texto-superpuesto";
-
-/*REDES SOCIALES DEL TITULO*/
-@import "./layout/_redes-sociales";
-
-/* PRIMER LLAMADO DE ATENCIÓN*/
-@import "./layout/_spam";
-
-/* TRANSICIÓN DEL BOTÓN*/
-@import "./layout/_boton-reservar";
-
-/* TITULO / PELUQUEROS DE CONFIANZA*/
-@import "./layout/_peluqueros";
-
-
-/* CAJA DE LOS INTEGRANTES & USO DE GRID*/
-@import "./layout/_integrante";
-
-/* PARTE SUPERIOR DE LA IMAGEN*/
-@import "./layout/_sobre-bardhall";
-
-/* IMAGEN SOBRE BARDHALL*/
-@import "./layout/_sobre-img";
-
-/* LLAMADO DE ATENCIÓN*/
-@import "./layout/_segundo-spam";
-
-/* PARTE SUPERIOR DEL FOOTER*/
-@import "./layout/_footer-top";
-
-/* REDES SOCIALES EN FOOTER */
-@import "./layout/_redes-sociales-footer";
-
-/*TITULO DEL FOOTER*/
-@import "./layout/_title-footer";
-
-/*FOOTER BOTTOM / PARTE PROFUNDA DEL FOOTER*/
-@import "./layout/_footer-bottom";
-
-
-//MEDIA QUERIES
+// Media Queries
 
 /* Dispositivos pequeños (Celulares) */
-@import "./media-queries/_media_mobile_index 320";
+@use "./media-queries/_media_mobile_index_320" as mobileIndex;
 
-@import "./media-queries/_media_desktop_index 1440";
-
-$Background-Color: #18181b;
-$Color-orange: #d97706;
+/* Dispositivos grandes (Desktop) */
+@use "./media-queries/_media_mobile_index_375" as mobileIndex375;

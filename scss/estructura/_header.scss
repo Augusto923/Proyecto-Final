@@ -1,15 +1,20 @@
 // Menú de navegación
 header{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
-  padding: 8px;
+  padding: 20px;
   border-bottom: 1px solid #ffffff;
 
   img{
     width: 150px;
     height: auto;
+  }
+
+  nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
   }
 
   ul{
@@ -32,4 +37,16 @@ header{
   a:hover{
     color: #d97706;
   }
+}
+
+.menú-otros{
+  align-items: center;
+  display: none;
+  
+
+  img{
+      width: 4vh;
+      margin-left: 15px;
+  }
+
 }
