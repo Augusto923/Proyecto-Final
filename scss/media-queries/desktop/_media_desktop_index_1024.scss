@@ -1,0 +1,174 @@
+@media (min-width: 1024px) and (max-width: 1439px) {
+    /* Ajustes para el header */
+    .menú-principal {
+        .img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ffffff;
+        }
+    }
+
+    /* Ajustes para el texto sobre la imagen principal */
+    .texto-superpuesto {
+        top: 18%;
+        left: 78%;
+
+        h1 {
+            font-size: 6vh;
+        }
+    }
+
+    /* Redes sociales en la imagen principal */
+    .redes-sociales {
+        top: 24%;
+        left: 78%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: row;
+
+        a {
+            img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+
+    /* Spam section */
+    .spam {
+        display: flex;
+        padding: 10px;
+        text-align: center;
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .peluqueros {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .boton-reservar {
+        transition: background-color 0.5s;
+
+        &:hover {
+            background-color: #0e7490;
+        }
+    }
+
+    /* Ajustes para los perfiles de los peluqueros */
+    .integrantes {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 20px auto;
+        align-items: center;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .integrante {
+        align-items: center;
+        margin: 20px;
+        padding: 10px;
+        width: 100%;
+        margin: 0;
+
+        .img {
+            width: 100%;
+            height: auto;
+            margin: 10px auto;
+        }
+
+        h2 {
+            font-size: 33px;
+            margin-top: 8px;
+        }
+
+        p {
+            font-size: 26px;
+            margin-top: 4px;
+        }
+    }
+
+    /* Sobre BardHall sección */
+    .sobre-bardhall {
+        margin: 0px;
+        width: 100%;
+        padding: 6vh;
+
+        h2 {
+            font-size: 63px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .sobre-img {
+        width: 100%;
+    }
+
+    .segundo-spam {
+        width: 100%;
+
+        h3 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        a {
+            font-size: 22px;
+        }
+    }
+
+    /* Footer */
+    .tittle-footer {
+        width: 100%;
+
+        h3 {
+            font-size: 40px;
+        }
+
+        .p {
+            font-size: 33px;
+        }
+    }
+
+    /* Redes sociales Footer */
+    .redes-sociales-footer {
+        a {
+            img {
+                width: 5vh;
+                height: 5vh;
+            }
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+    }
+
+    .footer-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        gap: 20px;
+
+        p {
+            font-size: 27px;
+            color: #999;
+        }
+
+        small {
+            font-size: 27px;
+            color: #ffffff;
+        }
+    }
+}

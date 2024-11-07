@@ -1,3 +1,4 @@
+@use "../utilities/variables" as variables;
 .footer-top{
     background-color: #18181b;
     color: white;
@@ -31,7 +32,7 @@
 .tittle-footer{
     h3{
         font-size: 64px;
-        color: #d97706;
+        color: variables.$color-naranja;
         margin-bottom: 10px;
     }
 

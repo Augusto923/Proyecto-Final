@@ -1,8 +1,9 @@
-  .boton {
+@use "../utilities/variables" as variables;
+.boton {
     transition: background-color 0.5s;
   
     &:hover {
-      background-color: #0e74909d;
+      background-color: variables.$color-boton;
     }
   }
   

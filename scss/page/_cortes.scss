@@ -1,0 +1,78 @@
+@use "../utilities/variables" as variables;
+
+//Cortes de pelo
+.spam-cortes {
+    display: flex;
+    padding: 5px;
+    font-size: 28px;
+    font-weight: bolder;
+    background-color: variables.$color-secundary;
+    margin: -4px auto;
+    max-width: 100%;
+  }
+  
+  .spam h3 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  // Estilos generales para la sección
+  .diferentes-estilos {
+    padding: 2rem;
+    background-color: variables.$color-primary;
+  }
+  
+  // Contenedor de los estilos de cortes
+  .estilos-de-cortes {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  // Cada estilo de corte
+  .los-estilos {
+    display: flex;
+    background-color: variables.$color-black;
+    border-radius: 8px;
+    margin: 3rem;
+    padding: 1rem;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 10px #0000004d;
+    }
+  
+    // Estilo de la imagen
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 5px;
+      margin-right: 1.5rem;
+    }
+  }
+  
+  // Estilo del texto dentro de los estilos
+  .texto {
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    text-align: center;
+  
+    h3 {
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      color: #ffffff;
+      line-height: 1.5;
+      margin-top: 0.5rem;
+    }
+  }
+  

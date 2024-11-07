@@ -1,4 +1,6 @@
 // Menú de navegación
+@use "../utilities/variables" as variables;
+
 header{
   display: flex;
   justify-content: space-between;
@@ -35,7 +37,7 @@ header{
   }
   
   a:hover{
-    color: #d97706;
+    color: variables.$color-naranja;
   }
 }
 
