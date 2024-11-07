@@ -3,21 +3,40 @@
 
 // Layout
 
-/* NAV DE LA PAGINA */
-@use "./estructura/header" as header;
+/* NAV & PIE DE LA PÁGINA */
+@use "./layout/header" as headerFooter;
 
+/* BOTON RESERVAR*/
 @use "./components/boton-reservar" as botton;
 
 /* SECCIÓN DE LA PARTE PRINCIPAL */
 @use "./page/principal" as pagina;
 
 /* FOOTER PIE DE PÁGINA */
-@use "./estructura/footer.scss" as footer;
+@use "./layout/footer.scss" as footer;
 
-// Media Queries
+// MEDIA QUERIES
 
 /* Dispositivos pequeños (Celulares) */
-@use "./media-queries/_media_mobile_index_320" as mobileIndex;
 
-/* Dispositivos grandes (Desktop) */
-@use "./media-queries/_media_mobile_index_375" as mobileIndex375;
+/*Dispositivo Mobile para (320 and 374px)*/
+@use "./media-queries/mobile/media_mobile_index_320" as mobileIndex;
+
+/* Dispositivo Mobile para (375 and 424px) */
+@use "./media-queries/mobile/media_mobile_index_375" as mobileIndex375;
+
+/* Dispositivo Mobile para (425 and 767px) */
+@use "./media-queries/mobile/media_mobile_index_425" as mobileIndex425;
+
+
+
+/*Dispositivos Grandes (Desktop)*/
+
+/*Dispositivo Mobile para (1024 and 1439px)*/
+@use "./media-queries/desktop/media_desktop_index_1024" as desktopIndex;
+
+/*Dispositivo Mobile para (1440 and 1919px)*/
+@use "./media-queries/desktop/media_desktop_index_1440" as desktopIndex1440;
+
+/*Dispositivo Mobile para (1920 and 2559px)*/
+@use "./media-queries/desktop/media_desktop_index_1920" as desktopIndex1920;
