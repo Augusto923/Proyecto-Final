@@ -1,0 +1,21 @@
+@use "../utilities/variables" as variables;
+
+/*Tamaño*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Sombra */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px variables.$color-secundary; 
+  }
+   
+  /* Color */
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff98; 
+  }
+  
+  /* Color Secundario */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff63; 
+  }

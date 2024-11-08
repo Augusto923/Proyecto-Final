@@ -1,3 +1,4 @@
+
 // _variables.scss
 
 $color-primary: #18181b; //Color fondo
@@ -12,6 +13,9 @@ $color-botonprof: #0e74907c; //Animación del boton
 
 $color-black: #00000028;//Color de reserva
 
-@mixin name{
-    
+.paletaDeColores{
+    color: #18181b;
+    color: #d97706;
+    color: #0e74909d;
 }
+

@@ -11,8 +11,11 @@
 /* NAV & PIE DE LA PÁGINA */
 @use "./layout/header" as headerFooter;
 
-/* BOTON RESERVAR */
+/* BOTON RESERVAR*/
 @use "./components/boton-reservar" as botton;
+
+/* Scrollbard Custom */
+@use "./components/scrollbard-custom";
 
 /* SECCIÓN DE LA PARTE PRINCIPAL */
 @use "./page/principal" as pagina;
@@ -20,11 +23,13 @@
 /* FOOTER PIE DE PÁGINA */
 @use "./layout/footer.scss" as footer;
 
-// Media Queries
+// MEDIA QUERIES
+
 
 /* Dispositivos pequeños (Celulares) */
 
-/* Dispositivo Mobile para (320 and 374px) */
+/*Dispositivo Mobile para (320 and 374px)*/
+
 @use "./media-queries/mobile/media_mobile_index_320" as mobileIndex;
 
 /* Dispositivo Mobile para (375 and 424px) */
@@ -32,6 +37,7 @@
 
 /* Dispositivo Mobile para (425 and 767px) */
 @use "./media-queries/mobile/media_mobile_index_425" as mobileIndex425;
+
 
 /* Dispositivos Grandes (Desktop) */
 
@@ -45,14 +51,19 @@
 @use "./media-queries/desktop/media_desktop_index_1920" as desktopIndex1920;
 
 
-/*Página Carrito*/
+/* Página Cortes */
 
 @use "./page/cortes.scss" as pagCortes;
 
-/*Página Turnos*/
+/* Página Turnos */
 
 @use "./page/turnos" as pagTurnos;
 
+/* Página Tienda */
+
 @use "./page/tienda" as pagTienda;
 
+/* Página Carrito */
+
 @use "./page/carrito" as pagCarrito;
+

@@ -1,0 +1,24 @@
+@use "../utilities/variables" as variables;
+
+@mixin flex-box-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@mixin button($bg-color, $text-color: #ffffff, $padding: 10px, $border-radius: 8px) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $padding;
+  border-radius: $border-radius;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}
