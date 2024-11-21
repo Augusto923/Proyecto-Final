@@ -20,6 +20,8 @@
   .diferentes-estilos {
     padding: 2rem;
     background-color: variables.$color-primary;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid #ffffff;
   }
   
   // Contenedor de los estilos de cortes

@@ -25,6 +25,11 @@ section{
 
     h1{
         color: variables.$color-naranja;
+        text-shadow: 2px 2px 4px rgba(228, 129, 0, 0.5);
+    }
+
+    h2{
+        text-shadow: 2px 2px 3px rgba(243, 243, 243, 0.5);
     }
 }
 
@@ -83,6 +88,7 @@ section{
     color: #ffffff;
     font-size: 30px;
     background-color: variables.$color-black;
+    text-shadow: 1px 2px 1px rgba(243, 243, 243, 0.5);
 }
 
 .integrantes {
@@ -141,6 +147,7 @@ section{
         text-align: center;
         border-bottom: 2px solid #ffffff;
         margin-top: 20px;
+        text-shadow: 1px 0.5px 2.5px rgba(243, 243, 243, 0.5);
     }
 
     p{

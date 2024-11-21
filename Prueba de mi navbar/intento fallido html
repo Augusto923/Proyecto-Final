@@ -1,0 +1,27 @@
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="logo">logo</h1>
+            <label class="label_h" for="menu_h">
+
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    width="35" 
+                    height="35"
+                    fill="currentColor" 
+                    class="list_icon" 
+                    viewBox="0 0 16 16">
+
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </label>
+
+            <input class="menu_h" type="checkbox" name="" id="menu_h">
+
+            <ul class="ul_links">
+                <li class="li_links"><a class="link" href="index.html">Barbería</a></li>
+                <li class="li_links"><a class="link" href="html/cortes.html">Cortes</a></li>
+                <li class="li_links"><a class="link" href="html/turnos.html">Turnos</a></li>
+                <li class="li_links"><a class="link" href="html/tienda.html">Tienda</a></li>
+                <li class="li_links"><a class="link" href="html/carrito.html">Carrito/a></li>
+            </ul>
+        </nav>
+    </header>
