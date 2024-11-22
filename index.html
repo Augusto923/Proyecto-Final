@@ -1,100 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Título -->
-    <title>Bard Hall</title>
-
-    <!-- Descripción y metadatos -->
     <meta name="description" content="La barbería amiga con estilo único y atención personalizada. Visítanos en BardHall para una experiencia premium. ¡Tu look, nuestra pasión!">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="icon" type="image/x-icon" href="assets/Favicon-log.png">
     <meta name="author" content="Bard Hall by Augusto Nusbaum">
-
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="BARD HALL, Barbería Premium con Estilo Clásico y Moderno">
     <meta property="og:description" content="La barbería amiga con estilo único y atención personalizada. Visítanos en BardHall para una experiencia premium. ¡Tu look, nuestra pasión!">
     <meta property="og:image" content="https://bardhall.com/assets/LogoPrueba.png">
-    <meta name="geo.placename" charset="Córdoba Argentina">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Twitter -->
+    <meta name="geo.placename" content="Córdoba, Argentina">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://bardhall.com">
     <meta property="twitter:title" content="BARD HALL">
     <meta property="twitter:description" content="La barbería amiga con estilo único y atención personalizada. Visítanos en BardHall para una experiencia premium. ¡Tu look, nuestra pasión!">
     <meta property="twitter:image" content="https://bardhall.com/assets/LogoPrueba.png">
-</head>
-<body>
-
-    <div class="container">
-        <!--Menú de navegación-->
-        <header>
-            <a href="index.html"><img src="assets/LogoPrueba.png" alt="Logo de la página"></a>
-            <nav>
-                <ul class="menu-navegacion">
-
-                    <li><a href="index.html">Barbería</a></li>
-                    <li><a href="html/cortes.html">Cortes</a></li>
-                    <li><a href="html/turnos.html">Turnos</a></li>
-                    <li><a href="html/tienda.html">Tienda</a></li>
-                    <li><a href="html/carrito.html">Carrito</a></li>
-
-                </ul>         
-            </nav>
-            
-            <!--Menu hamburguesa-->
-            <div class="menú-otros">
-                <a href="#"><img src="assets/menu-h.png" alt="menu"></a>
-            </div>
-        </header>
-
-
-        <!--Titulo & Img Principal-->
-        <section class="titulo-principal">
-            <div class="menú-principal">
-
-                <figure class="img-tittle"><img src="assets/Img_Principal_BardHall3.png" alt="Img de bienvenida"></figure>
-            
-                <div class="texto-superpuesto">
-                    <h1>BardHall</h1>
-                    <h2>BARBERÍA</h2>
-                </div>
-
-                <!--Redes Sociales en la img principal-->
-                <div class="redes-sociales">
-                    <ul>
-                        <li><a href="https://www.instagram.com/"> <img src="assets/Instagram-White.png" alt="Síguenos en Instagram"></a></li>
-                        <li><a href="https://www.facebook.com/"> <img src="assets/Facebook-White.png" alt="Síguenos en Facebook"></a></li>
-                        <li><a href="https://x.com/?lang=es"> <img src="assets/X-White.png" alt="Síguenos en X"></a></li>
-                    </ul>
-                </div>
-            </div>
-
-
-            <!--Sección de SPAM-->
-            <div class="spam">
-                <h3>Horarios:</h3>
-                <p>Lunes a Domingo de 10:30 a 22:30hs</p>
-                <a href="../html/turnos.html" class="boton">Reservar ahora</a>
-             </div>
-        </section>
-    </div> 
     
-    <!--Fin del Contenedor general-->
+    <!-- Título y favicon -->
+    <title>Bard Hall</title>
+    <link rel="icon" type="image/x-icon" href="assets/Favicon-log.png">
+    
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <!--Introducción a Peluqueros / No sabia donde ponerlo :) -->
+<body>
+    <!-- Menú de navegación -->
+    <header>
+        <a href="../index.html"><img src="../assets/LogoPrueba.png" alt="Logo de la página"></a>
+        
+        <nav>
+            <ul class="menu-navegacion">
+                <li><a href="index.html">Barbería</a></li>
+                <li><a href="html/cortes.html">Cortes</a></li>
+                <li><a href="html/turnos.html">Turnos</a></li>
+                <li><a href="html/tienda.html">Tienda</a></li>
+                <li><a href="html/carrito.html">Carrito</a></li>
+            </ul>         
+        </nav>
+    
+        <!-- Menu hamburguesa -->
+        <div class="menú-otros">
+            <a href="#" id="menu-toggle"><img src="../assets/menu-h.png" alt="Menu"></a>
+        </div>
+    </header>
+    
+    <!-- Título & Imagen Principal -->
+    <section class="titulo-principal">
+        <div class="menú-principal">
+            <figure class="img-tittle"><img src="assets/Img_Principal_BardHall3.png" alt="Img de bienvenida"></figure>
+        
+            <div class="texto-superpuesto">
+                <h1>BardHall</h1>
+                <h2>BARBERÍA</h2>
+            </div>
+
+            <!-- Redes Sociales en la img principal -->
+            <div class="redes-sociales">
+                <ul>
+                    <li><a href="https://www.instagram.com/"><img src="assets/Instagram-White.png" alt="Síguenos en Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/"><img src="assets/Facebook-White.png" alt="Síguenos en Facebook"></a></li>
+                    <li><a href="https://x.com/?lang=es"><img src="assets/X-White.png" alt="Síguenos en X"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sección de SPAM -->
+        <div class="spam">
+            <h3>Horarios:</h3>
+            <p>Lunes a Domingo de 10:30 a 22:30hs</p>
+            <a href="../html/turnos.html" class="boton">Reservar ahora</a>
+        </div>
+    </section>
+
+    <!-- Introducción a Peluqueros -->
     <div class="peluqueros">
         <h3>Nuestros peluqueros de confianza</h3>
     </div>
 
-    <!--Sección de Integrantes & uso de Grids-->
+    <!-- Sección de Integrantes & uso de Grids -->
     <div class="integrantes">
         <div class="integrante">
             <img src="assets/Integranteedit1.png" alt="Foto de Mateo Salinas">
@@ -109,7 +95,7 @@
         </div>
     </div>
 
-    <!--Contenido o Frase / BardHall-->
+    <!-- Contenido o Frase / BardHall -->
     <section id="sobre-bardhall">
         <div class="sobre-bardhall">
             <h2>Sobre BardHall</h2>
@@ -118,43 +104,41 @@
 
         <div class="sobre-img"><img src="assets/Panel-bardhall2.png" alt="Foto del local de BardHall, un local clásico de barbería"></div>
 
-
-            <!--Publicidad De Turno-->
+        <!-- Publicidad de Turno -->
         <div class="segundo-spam">
             <h3>SACÁ TURNO Y APROVECHA EL DESCUENTO</h3>
             <a href="html/turnos.html" class="boton">Reservar Ahora</a>
         </div>
     </section>
 
-    <!--Footer / Pie De Página-->
+    <!-- Footer / Pie De Página -->
     <footer>
         <div class="footer-top">
-    
-            <!--Redes Sociales Para el Footer-->
+            <!-- Redes Sociales Para el Footer -->
             <div class="redes-sociales-footer">
                 <ul>
-                    <li><a href="https://www.instagram.com/"> <img src="assets/Instagram-White.png" alt="Síguenos en Instagram"></a></li>
-                    <li><a href="https://www.facebook.com/"> <img src="assets/Facebook-White.png" alt="Síguenos en Facebook"></a></li>
-                    <li><a href="https://x.com/?lang=es"> <img src="assets/X-White.png" alt="Síguenos en X"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="assets/Instagram-White.png" alt="Síguenos en Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/"><img src="assets/Facebook-White.png" alt="Síguenos en Facebook"></a></li>
+                    <li><a href="https://x.com/?lang=es"><img src="assets/X-White.png" alt="Síguenos en X"></a></li>
                 </ul>
             </div>
 
             <div class="tittle-footer">
                 <h3>BardHall</h3>
-                <p>¿Dondé estamos ubicados?</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3341.3073718993237!2d-64.35839038822157!3d-33.12728858092577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d1ff30c21de253%3A0x54dcfa3100472f2!2sOsadia!5e0!3m2!1ses-419!2sar!4v1729073294225!5m2!1ses-419!2sar" width="1900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
+                <p>¿Dónde estamos ubicados?</p>
+                <iframe src="https://www.google.com/maps/embed?pb=..." class="mi-iframe"></iframe>
             </div>
         </div>
-        <!--Footer Bottom / Parte profunda del Footer-->
-            <div class="footer-bottom">
-                <p>DEFINE TU ESTILO CON NOSOTROS</p>
-                <small>© 2024 BardHall. Todos los derechos reservados.</small>
-            </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>DEFINE TU ESTILO CON NOSOTROS</p>
+            <small>© 2024 BardHall. Todos los derechos reservados.</small>
+        </div>
     </footer>
 
-    <!--Link de Javascript-->
+    <!-- Link de Javascript -->
     <script src="javascript/main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,70 @@
+@media (min-width: 1920px) and (max-width: 2559px) {
+    /* Estilo para los títulos */
+    h1, h2, h3, p {
+        text-align: left;
+        color: #ffffff;
+    }
+
+    /* Sección de Artículos */
+    .articulos {
+        padding: 5rem;
+    }
+
+    .articulos-en-venta {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    .lista-articulos {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .articulo {
+        background-color: #979999;
+        border-radius: 8px;
+        padding: 2.5rem;
+        text-align: left;
+    }
+
+    /* Sección de Producto Destacable */
+    .producto-destacable {
+        padding: 5rem;
+        background-color: #000000;
+        color: #fff;
+    }
+
+    .destacado {
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .destacado img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    /* Sección de Otros Productos */
+    .otros-productos {
+        padding: 5rem;
+        background-color: rgba(253, 253, 253, 0);
+    }
+
+    .otros {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    .lista-otros-productos {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .otro-producto {
+        background-color: #979999;
+        border-radius: 8px;
+        padding: 2.5rem;
+        text-align: left;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+}

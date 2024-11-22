@@ -39,18 +39,18 @@
 
     /* Ajustes para el texto sobre la imagen principal */
     .texto-superpuesto {
-        top: 34%;
+        top: 18%;
         left: 78%;
 
         h1{
-            font-size: 8vh;
+            font-size: 3vh;
         }
     }
 
 
     /* Redes sociales en la imagen principal */
     .redes-sociales{
-    top: 38%;
+    top: 20%;
     left: 78%;
     transform: translateX(-50%);
     display: flex;

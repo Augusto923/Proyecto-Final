@@ -1,0 +1,150 @@
+@media (min-width: 425px) and (max-width: 767px) {
+    /* Ajustes para el header */
+
+    header {
+        justify-content: space-around;
+        padding: 5px;
+        position: relative;
+        align-items: center;
+
+        img{
+            width: 100px;
+        }
+
+        ul{
+            li{
+                margin: 8px 0;
+            }
+        }
+    }
+
+    .menu-navegacion {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 10px;
+        transition: max-height 0.3s ease;
+        max-height: 0;
+        
+    }
+
+    .menú-otros{
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Ajustes para el texto sobre la imagen principal */
+    .texto-superpuesto{
+        position: absolute;
+        top: 21%;
+        left: 78%;
+
+        h1{
+            font-size: 4vh;
+        }
+    }
+
+
+    /* Redes sociales en la imagen principal */
+    .redes-sociales{
+    top: 24%;
+    left: 78%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+
+    a{
+            img{
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+
+    /* Estilo para los títulos */
+    h1, h2, h3, p {
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.2rem; /* Tamaño de fuente ligeramente mayor */
+    }
+
+    /* Sección de Artículos */
+    .articulos {
+        padding: 2rem;
+    }
+
+    .articulos-en-venta {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .lista-articulos {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+        gap: 1rem; /* Espaciado adecuado */
+    }
+
+    .articulo {
+        background-color: #979999;
+        border-radius: 8px;
+        padding: 1rem;
+        text-align: center;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .articulo img {
+        max-width: 70%; /* Ajustar el tamaño de las imágenes */
+        margin-bottom: 0.5rem;
+    }
+
+    /* Sección de Producto Destacable */
+    .producto-destacable {
+        padding: 2.5rem;
+        background-color: #000000;
+        color: #fff;
+    }
+
+    .destacado {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .destacado img {
+        max-width: 90%; /* Mantener buena escala en tabletas pequeñas */
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    /* Sección de Otros Productos */
+    .otros-productos {
+        padding: 2.5rem;
+    }
+
+    .otros {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .lista-otros-productos {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+        gap: 1rem;
+    }
+
+    .otro-producto {
+        background-color: #979999;
+        border-radius: 8px;
+        padding: 1rem;
+        text-align: center;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .otro-producto img {
+        max-width: 70%; /* Ajustar tamaño de las imágenes */
+        margin-bottom: 0.5rem;
+    }
+}

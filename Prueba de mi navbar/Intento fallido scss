@@ -30,8 +30,7 @@
 .logo{
   color: var(--color_blanco);
 }
-.label_h {
-}
+
 .list_icon {
   color: var(--color_blanco);
   cursor: pointer;
@@ -53,8 +52,7 @@
   
   transition: all .3s;
 }
-.li_links {
-}
+
 .link {
   font-size: 3em;
   color: var(--color_blanco);

@@ -23,37 +23,89 @@
 /* FOOTER PIE DE PÁGINA */
 @use "./layout/footer.scss" as footer;
 
-// MEDIA QUERIES
 
+                    // MEDIA QUERIES
 
-/* Dispositivos pequeños (Celulares) */
+            /* Index para Dispositivos pequeños */
 
 /*Dispositivo Mobile para (320 and 374px)*/
-
-@use "./media-queries/mobile/media_mobile_index_320" as mobileIndex;
+@use "./media-queries/mobile/mobile_320/media_mobile_index_320" as mobileIndex;
 
 /* Dispositivo Mobile para (375 and 424px) */
-@use "./media-queries/mobile/media_mobile_index_375" as mobileIndex375;
+@use "./media-queries/mobile/mobile_375/media_mobile_index_375" as mobileIndex375;
 
 /* Dispositivo Mobile para (425 and 767px) */
-@use "./media-queries/mobile/media_mobile_index_425" as mobileIndex425;
+@use "./media-queries/mobile/mobile_425/media_mobile_index_425" as mobileIndex425;
 
 
-/* Dispositivos Grandes (Desktop) */
+/* Dispositivos Grandes */
 
 /* Dispositivo Desktop para (1024 and 1439px) */
-@use "./media-queries/desktop/media_desktop_index_1024" as desktopIndex;
+@use "./media-queries/desktop/desktop_1024/media_desktop_index_1024" as desktopIndex1024;
 
 /* Dispositivo Desktop para (1440 and 1919px) */
-@use "./media-queries/desktop/media_desktop_index_1440" as desktopIndex1440;
+@use "./media-queries/desktop/desktop_1440/media_desktop_index_1440" as desktopIndex1440;
 
 /* Dispositivo Desktop para (1920 and 2559px) */
-@use "./media-queries/desktop/media_desktop_index_1920" as desktopIndex1920;
+@use "./media-queries/desktop/desktop_1920/media_desktop_index_1920" as desktopIndex1920;
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+            /* Cortes para Dispositivos pequeños */
+
+/*---------------------------------------------------------------------------------------------------------------*/
+/*Dispositivo Mobile para (320 and 374px)*/
+@use "./media-queries/mobile/mobile_320/media_mobile_cortes_320" as mobileCortes;
+
+/* Dispositivo Mobile para (375 and 424px) */
+@use "./media-queries/mobile/mobile_375/media_mobile_cortes_375" as mobileCortes375;
+
+/* Dispositivo Mobile para (425 and 767px) */
+@use "./media-queries/mobile/mobile_425/media_mobile_cortes_425" as mobileCortes425;
+
+
+/* Dispositivos Grandes */
+
+/* Dispositivo Desktop para (1024 and 1439px) */
+@use "./media-queries/desktop/desktop_1024/media_desktop_cortes_1024" as desktopCortes1024;
+
+/* Dispositivo Desktop para (1440 and 1919px) */
+@use "./media-queries/desktop/desktop_1440/media_desktop_cortes_1440" as desktopCortes1440;
+
+/* Dispositivo Desktop para (1920 and 2559px) */
+@use "./media-queries/desktop/desktop_1920/media_desktop_cortes_1920" as desktopCortes1920;
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+            /* Tienda para Dispositivos pequeños */
+
+/*---------------------------------------------------------------------------------------------------------------*/
+/*Dispositivo Mobile para (320 and 374px)*/
+@use "./media-queries/mobile/mobile_320/media_mobile_tienda_320" as mobileTienda320; /**/
+
+@use "./media-queries/mobile/mobile_375/media_mobile_tienda_375" as mobileTienda375;/**/
+
+@use "./media-queries/mobile/mobile_425/media_mobile_tienda_425" as mobileTienda425; /**/
+
+/* Dispositivos Grandes */
+
+/* Dispositivo Desktop para (1024 and 1439px) */
+@use "./media-queries/desktop/desktop_1024/media_desktop_tienda_1024" as DesktopTienda1024;
+
+/* Dispositivo Desktop para (1440 and 1919px) */
+@use "./media-queries/desktop/desktop_1440/media_desktop_tienda_1440" as desktopTienda1440;
+
+/* Dispositivo Desktop para (1920 and 2559px) */
+@use "./media-queries/desktop/desktop_1920/media_desktop_tienda_1920" as desktopTienda1920;
+
+
+
+
 
 
 /* Página Cortes */
 
-@use "./page/cortes.scss" as pagCortes;
+@use "./page/cortes" as pagCortes;
 
 /* Página Turnos */
 

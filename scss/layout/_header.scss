@@ -1,54 +1,102 @@
 // Menú de navegación
 @use "../utilities/variables" as variables;
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   border-bottom: 1px solid #ffffff;
 
-  img{
+  img {
     width: 120px;
     height: auto;
   }
 
-  nav{
+  nav {
     flex: 1;
     display: flex;
     justify-content: center;
+    transition: background-color 0.3s ease;
   }
 
-  ul{
+  ul {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
 
-    li{
+    li {
       margin: 20px;
     }
   }
 
-  a{
+  a {
     color: #ffffff;
     transition: color 0.3s ease;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
   }
-  
-  a:hover{
+
+  a:hover {
     color: variables.$color-naranja;
   }
-}
 
-.menú-otros{
-  align-items: center;
-  display: none;
-  
-
-  img{
-      width: 4vh;
-      margin-left: 15px;
+  // Estilo cuando el menú está activo (hamburguesa visible)
+  nav.active {
+    background-color: #000;
   }
 
+  .menú-otros {
+    display: none;
+    align-items: center;
+
+    img {
+      width: 4vh;
+      margin-left: 15px;
+    }
+  }
+
+  // Menú hamburguesa en pantallas pequeñas
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      background-color: #000;
+      width: 100%;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .menú-otros {
+      display: block;
+    }
+
+    .menú-otros a {
+      color: #ffffff;
+      font-size: 2rem;
+    }
+
+    nav.active ul {
+      background-color: #239;
+      display: flex;
+      align-items: center;
+      padding: 0px;
+      
+    }
+
+    ul li {
+      margin: 15px 0;
+    }
+
+    ul li a {
+      font-size: 1.5rem;
+      font-weight: 600;
+      background-color: #239;
+    }
+  }
 }

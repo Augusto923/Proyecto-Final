@@ -40,7 +40,7 @@
 
   /* Ajustes para el texto sobre la imagen principal */
     .texto-superpuesto {
-        top: 38%;
+        top: 36%;
         left: 78%;
 
         h1{
@@ -51,7 +51,7 @@
 
   /* Redes sociales en la imagen principal */
     .redes-sociales{
-      top: 39%;
+      top: 37%;
       left: 78%;
       transform: translateX(-50%);
       display: flex;
@@ -154,6 +154,10 @@
 
         .p{
             font-size: 14px;
+        }
+
+        .iframe{
+            height: auto;
         }
     }
 
