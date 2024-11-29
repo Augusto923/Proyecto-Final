@@ -1,0 +1,130 @@
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  // Ajustes para el encabezado y el menú
+  header {
+    .menu-navegacion {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menú-otros {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+
+  // Ajustes del título principal
+  .titulo-principal {
+    .menu-principal {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      figure.img-tittle {
+        img {
+          max-width: 100%; 
+        }
+      }
+
+      .texto-superpuesto {
+        h1 {
+          font-size: 56px;
+        }
+
+        h2 {
+          font-size: 42px; 
+        }
+      }
+    }
+  }
+
+  // Ajustes de la columna derecha
+  .columna-derecha {
+    width: 32%;
+    padding: 1.8rem;
+
+    .información-de-contacto {
+      h2 {
+        font-size: 18px;
+      }
+
+      .item-telefono, 
+      .item-gmail {
+        img {
+          width: 18px; 
+        }
+
+        span {
+          font-size: 18px;
+        }
+      }
+
+      button {
+        padding: 0.7rem 1.8rem;
+        max-width: 100%;
+        margin: 3px;
+      }
+    }
+  }
+
+  // Ajustes de la galería
+  .galeria-imagenes {
+    ul {
+      display: flex;
+      gap: 1.25rem; 
+      padding: 0;
+      margin: 0;
+
+      li {
+        flex: 1 1 calc(14% - 1.25rem); 
+        list-style: none;
+      }
+
+      img {
+        border-radius: 10px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  // Ajustes de la sección de calificación
+  .calificacion {
+    .comentarios {
+      flex-direction: row;
+      gap: 2.5rem;
+
+      .resenia {
+        flex: 1;
+      }
+    }
+  }
+
+  // Ajustes de la sección de artículos
+  .seccion-articulos {
+    .articulos-slider {
+      gap: 1.75rem;
+      display: flex;
+      overflow-x: auto;
+
+      a img {
+        height: 240px;
+        width: 240px;
+      }
+    }
+  }
+
+  // Ajustes del footer
+  .tittle-footer {
+    iframe {
+      max-width: 100%;
+      height: 350px; 
+    }
+  }
+
+  .footer-bottom {
+    p, 
+    small {
+      text-align: center;
+    }
+  }
+}

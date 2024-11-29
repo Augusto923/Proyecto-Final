@@ -1,5 +1,5 @@
 @media (min-width: 425px) and (max-width:767px) {
-    /* Ajustes para el header */
+    // Ajustes para el header
 
     header {
         justify-content: space-around;
@@ -38,7 +38,7 @@
         cursor: pointer;
     }
 
-    /* Ajustes para el texto sobre la imagen principal */
+    // Ajustes para el texto sobre la imagen principal
     .texto-superpuesto{
         position: absolute;
         top: 21%;
@@ -50,7 +50,7 @@
     }
 
 
-    /* Redes sociales en la imagen principal */
+    // Redes sociales en la imagen principal
     .redes-sociales{
     top: 24%;
     left: 78%;
@@ -66,7 +66,7 @@
         }
     }
 
-    /* Spam section */
+    // Spam section
     .spam {
     flex-direction: column;
     padding: 8px;
@@ -91,7 +91,7 @@
         }
     }
 
-    /* Ajustes para los perfiles de los peluqueros */
+    // Ajustes para los perfiles de los peluqueros
     .integrantes {
     width: 90%;
     grid-template-columns: 1fr;
@@ -122,7 +122,7 @@
         }     
     }
 
-    /* Sobre BardHall sección */
+    // Sobre BardHall sección
     .sobre-bardhall{
         h2{
             font-size: 28px;
@@ -146,7 +146,7 @@
         }
     }
 
-    /* Footer */
+    // Footer
     .tittle-footer{
         h3{
             font-size: 36px;
@@ -157,7 +157,7 @@
         }
     }
 
-    /* Redes sociales Footer */
+    // Redes sociales Footer
     .redes-sociales-footer{
         a{
             img{

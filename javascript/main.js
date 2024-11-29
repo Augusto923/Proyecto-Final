@@ -17,3 +17,34 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+const sliderContainer = document.querySelector('.slider-container');
+const productList = document.querySelector('.lista-otros-productos');
+const prevButton = document.querySelector('.slider-prev');
+const nextButton = document.querySelector('.slider-next');
+
+// Control del desplazamiento
+let currentTranslate = 0;
+const productWidth = productList.firstElementChild.offsetWidth + 16; // Ancho del producto + gap
+const maxTranslate = productList.scrollWidth - sliderContainer.offsetWidth;
+
+// Funciones para mover el slider
+function slideNext() {
+    currentTranslate -= productWidth;
+    if (Math.abs(currentTranslate) > maxTranslate) {
+        currentTranslate = -maxTranslate; // Límite máximo
+    }
+    productList.style.transform = `translateX(${currentTranslate}px)`;
+}
+
+function slidePrev() {
+    currentTranslate += productWidth;
+    if (currentTranslate > 0) {
+        currentTranslate = 0; // Límite mínimo
+    }
+    productList.style.transform = `translateX(${currentTranslate}px)`;
+}
+
+// Eventos para los botones
+nextButton.addEventListener('click', slideNext);
+prevButton.addEventListener('click', slidePrev);

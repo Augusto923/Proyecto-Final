@@ -1,0 +1,136 @@
+@media (min-width: 320px) and (max-width: 374px) {
+  // Ajustes para el Header y Menú
+  header {
+    nav {
+      ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        background-color: #000;
+        width: 100%;
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      &.active {
+        ul {
+          background-color: #239;
+          display: flex;
+          align-items: center;
+          padding: 0;
+        }
+      }
+    }
+
+    .menú-otros {
+      display: block;
+
+      a {
+        color: #ffffff;
+        font-size: 2rem;
+      }
+    }
+
+    ul {
+      li {
+        margin: 15px 0;
+      }
+    }
+  }
+
+  // Ajustes para el texto sobre la imagen principal
+  .texto-superpuesto {
+    top: 34%;
+    left: 78%;
+
+    h1 {
+      font-size: 7vh;
+    }
+  }
+
+  // Redes sociales en la imagen principal
+  .redes-sociales {
+    top: 38%;
+    left: 78%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+
+    a {
+      img {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+
+  // Estilo del carrito
+  .carrito-compras {
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    
+  }
+
+  // Formulario
+  .envio, .retiro, .metodo-pago {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  // Inputs
+  input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  // Productos de compra
+  .productos-compra .producto {
+    padding: 15px;
+  }
+
+  // Estilo del total de compra
+  .total-compra {
+    margin-top: 20px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  // Productos similares
+  .productos-similares {
+    margin-top: 20px;
+  }
+
+  .productos {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .producto-similar {
+    flex: 1;
+    padding: 15px;
+  }
+
+  .producto-similar img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .total-compra p {
+    font-size: 16px;
+  }
+
+  .enlace {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}

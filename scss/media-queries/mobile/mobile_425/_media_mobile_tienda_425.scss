@@ -1,5 +1,5 @@
 @media (min-width: 425px) and (max-width: 767px) {
-    /* Ajustes para el header */
+    // Ajustes para el header
 
     header {
         justify-content: space-around;
@@ -38,7 +38,7 @@
         cursor: pointer;
     }
 
-    /* Ajustes para el texto sobre la imagen principal */
+    // Ajustes para el texto sobre la imagen principal
     .texto-superpuesto{
         position: absolute;
         top: 21%;
@@ -50,7 +50,7 @@
     }
 
 
-    /* Redes sociales en la imagen principal */
+    // Redes sociales en la imagen principal
     .redes-sociales{
     top: 24%;
     left: 78%;
@@ -66,14 +66,14 @@
         }
     }
 
-    /* Estilo para los títulos */
+    // Estilo para los títulos
     h1, h2, h3, p {
         text-align: center;
         color: #ffffff;
-        font-size: 1.2rem; /* Tamaño de fuente ligeramente mayor */
+        font-size: 1.2rem;
     }
 
-    /* Sección de Artículos */
+    // Sección de Artículos
     .articulos {
         padding: 2rem;
     }
@@ -84,8 +84,8 @@
     }
 
     .lista-articulos {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-        gap: 1rem; /* Espaciado adecuado */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
     .articulo {
@@ -97,11 +97,11 @@
     }
 
     .articulo img {
-        max-width: 70%; /* Ajustar el tamaño de las imágenes */
+        max-width: 70%;
         margin-bottom: 0.5rem;
     }
 
-    /* Sección de Producto Destacable */
+    // Sección de Producto Destacable
     .producto-destacable {
         padding: 2.5rem;
         background-color: #000000;
@@ -115,12 +115,12 @@
     }
 
     .destacado img {
-        max-width: 90%; /* Mantener buena escala en tabletas pequeñas */
+        max-width: 90%;
         border-radius: 8px;
         margin-bottom: 15px;
     }
 
-    /* Sección de Otros Productos */
+    // Sección de Otros Productos
     .otros-productos {
         padding: 2.5rem;
     }
@@ -131,7 +131,7 @@
     }
 
     .lista-otros-productos {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
 
@@ -144,7 +144,7 @@
     }
 
     .otro-producto img {
-        max-width: 70%; /* Ajustar tamaño de las imágenes */
+        max-width: 70%;
         margin-bottom: 0.5rem;
     }
 }

@@ -2,243 +2,255 @@
 
 // Animación de deslizamiento para la galería
 @keyframes slideUp {
-  0% { transform: translateY(20px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
+// Animación general
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Sección: Conócenos mejor
 .conocenos-mejor {
+  text-align: center;
+  justify-content: center;
+  animation: fadeIn 1s ease-out;
+
+  h3 {
+    font-size: 36px;
+    color: #ffffff;
+    padding: 8px;
+    background-color: #2c2219;
+    animation: fadeIn 1.5s ease-out;
+    border-bottom: 1px solid #fff;
+  }
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 32px;
     text-align: center;
-    justify-content: center;
-    animation: fadeIn 1s ease-out;
-  
-    h3 {
-      font-size: 36px;
-      color: #ffffff;
-      padding: 8px;
-      background-color: #2c2219;
-      animation: fadeIn 1.5 ease-out;
-      border-bottom: 1px solid #fff;
-    }
-  
-    // Sección de spam
-    p {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 22px;
-      color: rgba(255, 255, 255, 0.7);
-      padding: 32px 32px;
-      text-align: center;
-      max-width: 1600px;
-      margin: 16px auto;
-      line-height: 1.6;
-      
-    }
+    max-width: 1600px;
+    margin: 16px auto;
+    line-height: 1.6;
   }
-  
-  // Estilos de la columna derecha
-  .columna-derecha {
-    padding: 2rem;
-    width: 25%;
-    height: 62.4%;
-    float: right;
-    background-color: #4e0b0b0c;
-  }
-  
-  // Estilo de la información de contacto
+}
+
+// Estilos de la columna derecha
+.columna-derecha {
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: left;
+
   .información-de-contacto {
-    text-align: center;
-    min-height: 45vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-  
+    background-color: #4e0b0b4d;
+    border-radius: 10px;
+    padding: 1.5rem;
+    color: #f5f5f5;
+
     h2 {
-      color: #d97706;
-      margin-bottom: 1rem;
+      font-size: 24px;
       text-align: center;
-      text-shadow: 2px 2px 4px rgba(228, 129, 0, 0.5);
+      margin-bottom: 1rem;
     }
-  
-    .item-telefono, .item-gmail {
+
+    .item-telefono,
+    .item-gmail {
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 0.8rem;
       margin-bottom: 1rem;
-  
+
       img {
-        width: 30px;
-        margin-right: 0.5rem;
+        width: 24px;
+        height: auto;
+      }
+
+      span {
+        font-size: 18px;
+        line-height: 1.4;
       }
     }
-  
-    .genera-turno {
-      margin-top: 1rem;
-    }
-  }
-  
-  // Botones en información de contacto
-  button {
-    background-color: #24384d;
-    color: white;
-    border-color: rgba(255, 255, 255, 0.31);
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-right: 0.5rem;
-    transition: background-color 0.3s;
-  
-    &:hover {
-      background-color: #34495e;
-    }
-  }
-  
-  .btn-continuar {
-    background-color: rgba(21, 22, 128, 0.72);
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  
-    &:hover {
-      background-color: rgba(16, 26, 160, 0.62);
-    }
-  }
-  
-  // Estilos de la sección de estilo
-  .nuestro-estilo {
-    padding: 2rem;
-    background-color: #4e0b0b4d;
-    text-align: center;
-    border-bottom: 1px solid #ffffff;
-    animation: fadeIn 1.5s ease-out;
-  
-    .titulo-subtitulo {
-      h2, p {
-        color: #ffffff;
-        margin: 20px;
-      }
-  
-      h2 {
-        margin-bottom: 0.5rem;
-        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.336);
-      }
-    }
-  }
-  
-  // Estilos de la galería de imágenes
-  .galeria-imagenes {
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      list-style: none;
-      padding: 0;
-    }
-  
-    li {
-      margin: 0.5rem;
-      flex: 1 1 calc(20% - 1rem);
-      animation: slideUp 1s ease-out;
-    }
-  
-    img {
+
+    button {
+      display: block;
       width: 100%;
-      border-radius: 5px;
-      transition: transform 0.3s ease;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-  }
-  
-  // Estilos de la sección de calificación
-  .calificacion {
-    padding: 2rem;
-    background-color: variables.$color-secundary;
-    border-bottom: 1px solid #fff;
-  
-    .contenedor-calificacion {
-      h3 {
-        color: #ffffff;
-        margin-bottom: 1rem;
-        text-align: center;
-        font-size: 35px;
-        padding: 20px;
-        margin: 20px;
-        text-shadow: 0px 2px 0px rgba(233, 233, 233, 0.37);
-      }
-    }
-  
-    .comentarios {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      color: white;
-      margin: 60px;
-      gap: 40px;
-    }
-  
-    .resenia {
-      background-color: #18181b;
-      padding: 1rem;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px;
-      transition: transform 0.3s ease;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-  
-    .boton-resenia {
-      display: inline-block;
-      background-color: variables.$color-boton;
-      color: white;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-      border-radius: 5px;
+      padding: 0.8rem;
       margin-top: 1rem;
-      transition: background-color 0.3s;
-  
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:first-of-type {
+        background-color: #4caf50;
+      }
+
+      &:nth-of-type(2) {
+        background-color: #f44336;
+      }
+
+      &:last-of-type {
+        background-color: #6c10ff71;
+      }
+
       &:hover {
-        background-color: variables.$color-botonprof;
+        opacity: 0.8;
       }
     }
   }
-  
-  // Estilos de la sección de artículos
-  .seccion-articulos {
-    padding: 2rem;
+}
+
+// Sección: Nuestro estilo
+.nuestro-estilo {
+  padding: 2rem;
+  background-color: #4e0b0b4d;
+  text-align: center;
+  border-bottom: 1px solid #ffffff;
+  animation: fadeIn 1.5s ease-out;
+
+  .titulo-subtitulo {
+    h2,
+    p {
+      color: #ffffff;
+      margin: 25px;
+    }
+
+    h2 {
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.336);
+    }
+  }
+}
+
+// Sección: Galería de imágenes
+.galeria-imagenes {
+  ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin: 0.5rem;
+    flex: 1 1 calc(20% - 1rem);
+    animation: slideUp 1s ease-out;
+  }
+
+  img {
+    width: 100%;
     border-radius: 5px;
-    background-color: #4e0b0b4d;
-    border-bottom: 1px solid #fff;
-  
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+// Sección: Calificación
+.calificacion {
+  padding: 2rem;
+  background-color: variables.$color-secundary;
+  border-bottom: 1px solid #fff;
+
+  .contenedor-calificacion {
     h3 {
       color: #ffffff;
       margin-bottom: 1rem;
-      padding: 1rem 0;
       text-align: center;
-      position: relative;
+      font-size: 35px;
+      padding: 20px;
+      margin: 20px;
+      text-shadow: 0px 2px 0px rgba(233, 233, 233, 0.37);
     }
-  
-    .articulos-slider {
-      display: flex;
-      gap: 2rem;
-  
-      a {
-        flex: 1;
-  
-        img {
-          height: 250px;
-          width: 250px;
-          border-radius: 5px;
-        }
+  }
+
+  .comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+    margin: 60px;
+    gap: 40px;
+  }
+
+  .resenia {
+    background-color: #18181b;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .boton-resenia {
+    display: inline-block;
+    background-color: variables.$color-boton;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: variables.$color-botonprof;
+    }
+  }
+}
+
+// Sección: Artículos
+.seccion-articulos {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #4e0b0b4d;
+  border-bottom: 1px solid #fff;
+
+  h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+  }
+
+  .articulos-slider {
+    display: flex;
+    gap: 2rem;
+
+    a {
+      flex: 1;
+
+      img {
+        border-radius: 5px;
       }
     }
+  }
 }
-  

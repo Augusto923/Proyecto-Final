@@ -1,146 +1,149 @@
 @media (min-width: 1920px) and (max-width: 2559px) {
 
-    /* Ajustes para el texto sobre la imagen principal */
-    .texto-superpuesto {
-        position: absolute;
-        top: 64%;
-        left: 75%;
-        transform: translate(-50%, -50%);
-        color: #ffffff;
-        text-align: center;
-        font-size: 3vw;
-        border-bottom: 1px solid #ffffff;
+  // Ajustes para el texto sobre la imagen principal
+  .texto-superpuesto {
+    position: absolute;
+    top: 64%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    font-size: 3vw;
+    border-bottom: 1px solid #ffffff;
 
-        h1 {
-            color: #d97706;
-        }
+    h1 {
+      color: #d97706;
     }
+  }
 
-    .redes-sociales {
-        position: absolute;
-        top: 74%;
-        left: 69%;
-        display: flex;
+  // Redes sociales en la imagen principal
+  .redes-sociales {
+    position: absolute;
+    top: 74%;
+    left: 69%;
+    display: flex;
 
-        a {
-            img {
-                width: 55px;
-                height: 55px;
-                margin: 15px;
-                border-bottom: 1px solid #ffffff;
-            }
-        }
-
-        ul {
-            display: flex;
-            list-style: none;
-            justify-content: center;
-        }
-    }
-
-
-    /* Sección "diferentes estilos" */
-    .diferentes-estilos {
-      padding: 3.5rem;
-      gap: 4rem;
-    }
-
-    /* Contenedor de los estilos de cortes */
-    .estilos-de-cortes {
-      flex-direction: row;
-      gap: 3.5rem;
-    }
-
-    /* Cada estilo de corte */
-    .los-estilos {
-      flex-direction: column;
-      margin: 3rem auto;
-      padding: 3.5rem;
-      max-width: 70%;
-      background-color: rgba(0, 0, 0, 0.85);
-      border-radius: 20px;
-
+    a {
       img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 2.5rem;
-        border-radius: 14px;
+        width: 55px;
+        height: 55px;
+        margin: 15px;
+        border-bottom: 1px solid #ffffff;
       }
     }
 
-    /* Texto dentro de los estilos */
-    .texto {
-      padding: 3.5rem 4rem;
-      text-align: justify;
-      background-color: rgba(0, 0, 0, 0.8);
-      border-radius: 20px;
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+    }
+  }
 
+  // Sección "diferentes estilos"
+  .diferentes-estilos {
+    padding: 3.5rem;
+    gap: 4rem;
+  }
+
+  // Contenedor de los estilos de cortes
+  .estilos-de-cortes {
+    display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+  }
+
+  // Cada estilo de cortes
+  .los-estilos {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    padding: 3.5rem;
+    max-width: 70%;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 20px;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 2.5rem;
+      border-radius: 14px;
+    }
+  }
+
+  // Texto dentro de los estilos
+  .texto {
+    padding: 3.5rem 4rem;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+
+    h3 {
+      font-size: 2.2rem;
+      margin-bottom: 1.4rem;
+      color: #ffffff;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 2.1;
+      color: #ffffff;
+      margin-top: 0.7rem;
+    }
+  }
+
+  // Ajustes para el encabezado y el menú
+  header {
+    .menu-navegacion {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-otros {
+      display: flex;
+      gap: 3.5rem;
+    }
+  }
+
+  // Sección de spam
+  .spam {
+    padding: 2.5rem;
+
+    h3 {
+      font-size: 1.8rem;
+      text-align: center;
+      line-height: 1.8;
+    }
+  }
+
+  // Footer
+  footer {
+    .tittle-footer {
       h3 {
-        font-size: 2.2rem;
-        margin-bottom: 1.4rem;
-        color: #ffffff;
+        font-size: 2.6rem;
+        text-align: center;
       }
 
       p {
-        font-size: 1.6rem;
-        line-height: 2.1;
-        color: #ffffff;
+        font-size: 1.5rem;
+        text-align: center;
         margin-top: 0.7rem;
       }
-    }
 
-    /* Ajustes para el encabezado y el menú */
-    header {
-      .menu-navegacion {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .menú-otros {
-        display: flex;
-        gap: 3.5rem;
+      iframe {
+        width: 100%;
+        height: 400px;
       }
     }
 
-    /* Sección de spam */
-    .spam {
-      padding: 2.5rem;
-      h3 {
-        font-size: 1.8rem;
-        text-align: center;
-        line-height: 1.8;
+    .footer-bottom {
+      p {
+        font-size: 1.3rem;
+      }
+
+      small {
+        font-size: 1.2rem;
       }
     }
-
-    /* Footer */
-    footer {
-      .tittle-footer {
-        h3 {
-          font-size: 2.6rem;
-          text-align: center;
-        }
-
-        p {
-          font-size: 1.5rem;
-          text-align: center;
-          margin-top: 0.7rem;
-        }
-
-        iframe {
-          width: 100%;
-          height: 400px;
-        }
-      }
-
-      .footer-bottom {
-        p {
-          font-size: 1.3rem;
-        }
-
-        small {
-          font-size: 1.2rem;
-        }
-      }
-    }
+  }
 }

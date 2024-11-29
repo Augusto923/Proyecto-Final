@@ -1,6 +1,6 @@
 @media (min-width: 1024px) and (max-width: 1439px) {
 
-    /* Ajustes para el texto sobre la imagen principal */
+    // Ajustes para el texto sobre la imagen principal
     .texto-superpuesto {
       top: 18%;
       left: 78%;
@@ -10,118 +10,118 @@
       }
   }
 
-  /* Redes sociales en la imagen principal */
+  // Redes sociales en la imagen principal
   .redes-sociales {
-      top: 24%;
-      left: 78%;
-      transform: translateX(-50%);
-      display: flex;
-      flex-direction: row;
+    top: 24%;
+    left: 78%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
 
-      a {
-          img {
-              width: 35px;
-              height: 35px;
-          }
-      }
+    a {
+        img {
+            width: 35px;
+            height: 35px;
+        }
+    }
   }
 
-    /* Contenedor de los estilos de cortes */
-    .estilos-de-cortes {
-      flex-direction: row;
+  // Contenedor de los estilos de cortes
+  .estilos-de-cortes {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+
+    // Cada estilo de corte
+  .los-estilos {
+    flex-direction: column;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    max-width: 80%;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+    }
+  }
+
+  // Texto dentro de los estilos
+  .texto {
+    padding: 2.5rem 3rem;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+
+    h3 {
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.9;
+      color: #ffffff;
+      margin-top: 0.5rem;
+    }
+  }
+
+    // Ajustes para el encabezado y el menú
+  header {
+    .menu-navegacion {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menú-otros {
+      display: flex;
       gap: 2.5rem;
     }
+  }
 
-    /* Cada estilo de corte */
-    .los-estilos {
-      flex-direction: column;
-      margin: 2rem auto;
-      padding: 2.5rem;
-      max-width: 80%;
-      background-color: rgba(0, 0, 0, 0.85);
-      border-radius: 15px;
-
-      img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 1.5rem;
-        border-radius: 10px;
-      }
+    // Sección de spam
+  .spam {
+    padding: 1.5rem;
+    h3 {
+      font-size: 1.4rem;
+      text-align: center;
+      line-height: 1.6;
     }
+  }
 
-    /* Texto dentro de los estilos */
-    .texto {
-      padding: 2.5rem 3rem;
-      text-align: justify;
-      background-color: rgba(0, 0, 0, 0.8);
-      border-radius: 15px;
-
+  // Footer
+  footer {
+    .tittle-footer {
       h3 {
-        font-size: 1.9rem;
-        margin-bottom: 1rem;
-        color: #ffffff;
+        font-size: 2.2rem;
+        text-align: center;
       }
 
       p {
-        font-size: 1.4rem;
-        line-height: 1.9;
-        color: #ffffff;
+        font-size: 1.3rem;
+        text-align: center;
         margin-top: 0.5rem;
       }
-    }
 
-    /* Ajustes para el encabezado y el menú */
-    header {
-      .menu-navegacion {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .menú-otros {
-        display: flex;
-        gap: 2.5rem;
+      iframe {
+        width: 100%;
+        height: 320px;
       }
     }
 
-    /* Sección de spam */
-    .spam {
-      padding: 1.5rem;
-      h3 {
-        font-size: 1.4rem;
-        text-align: center;
-        line-height: 1.6;
+    .footer-bottom {
+      p {
+        font-size: 1.1rem;
+      }
+
+      small {
+        font-size: 1rem;
       }
     }
-
-    /* Footer */
-    footer {
-      .tittle-footer {
-        h3 {
-          font-size: 2.2rem;
-          text-align: center;
-        }
-
-        p {
-          font-size: 1.3rem;
-          text-align: center;
-          margin-top: 0.5rem;
-        }
-
-        iframe {
-          width: 100%;
-          height: 320px;
-        }
-      }
-
-      .footer-bottom {
-        p {
-          font-size: 1.1rem;
-        }
-
-        small {
-          font-size: 1rem;
-        }
-      }
-    }
+  }
 }

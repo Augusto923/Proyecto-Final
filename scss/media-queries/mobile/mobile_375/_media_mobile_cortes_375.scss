@@ -1,88 +1,87 @@
 @media (min-width: 375px) and (max-width: 424px) {
-
-  /* Ajustes para el texto sobre la imagen principal */
+    // Ajustes para el Header y Menú
   header {
-    justify-content: space-around;
-    padding: 5px;
-    position: relative;
-    align-items: center;
+    nav {
+      ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #000;
+        width: 100%;
+        padding: 20px;
+        border-radius: 5px;
+      }
 
-    img{
-        width: 100px;
-    }
-
-    ul{
-        li{
-            margin: 8px 0;
+      &.active {
+        ul {
+          background-color: #239;
+          display: flex;
+          align-items: center;
+          padding: 0;
         }
+      }
     }
-}
 
-.menu-navegacion {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    padding: 10px;
-    transition: max-height 0.3s ease;
-    max-height: 0;
-    
-}
+    .menú-otros {
+      display: block;
 
-.menú-otros{
-    display: block;
-    cursor: pointer;
-}
+      a {
+        color: #ffffff;
+        font-size: 2rem;
+      }
+    }
 
-/* Ajustes para el texto sobre la imagen principal */
-.texto-superpuesto {
+    ul {
+      li {
+        margin: 15px 0;
+      }
+    }
+  }
+
+  // Ajustes para el texto sobre la imagen principal 
+  .texto-superpuesto {
     top: 18%;
-    left: 78%;
+    left: 76%;
 
-    h1{
-        font-size: 3vh;
+    h1 {
+      font-size: 3.2vh;
     }
-}
+  }
 
+  // Redes sociales en la imagen principal
+  .redes-sociales {
+    top: 19%;
+    left: 76%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
 
-/* Redes sociales en la imagen principal */
-.redes-sociales{
-top: 20%;
-left: 78%;
-transform: translateX(-50%);
-display: flex;
-flex-direction: row;
-
-a{
-        img{
-            width: 10px;
-            height: 10px;
-        }
+    a {
+      img {
+        width: 12px;
+        height: 12px;
+      }
     }
-}
+  }
 
-  /* Sección "diferentes estilos" */
+  //Ajustes para los diferentes cortes de pelo
   .diferentes-estilos {
-    padding: 1rem;
+    padding: 1.2rem;
     gap: 1.8rem;
   }
 
-  /* Contenedor de los estilos de cortes */
   .estilos-de-cortes {
     flex-direction: column;
     gap: 1.2rem;
   }
 
-  /* Cada estilo de corte */
   .los-estilos {
     flex-direction: column;
-    margin: 1rem auto;
+    margin: 1.2rem auto;
     padding: 1.2rem;
-    max-width: 95%;
+    max-width: 90%;
     background-color: rgba(0, 0, 0, 0.85);
     border-radius: 10px;
 
@@ -94,9 +93,8 @@ a{
     }
   }
 
-  /* Texto dentro de los estilos */
   .texto {
-    padding: 1.2rem 1.8rem;
+    padding: 1.2rem 1.5rem;
     text-align: justify;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
@@ -115,20 +113,48 @@ a{
     }
   }
 
-  /* Ajustes para el encabezado y el menú */
+  // Ajustes para el header
   header {
-    .menu-navegacion {
-      display: none;
-    }
+    nav {
+      ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #000;
+        width: 100%;
+        padding: 20px;
+        border-radius: 5px;
+      }
 
-    .menú-otros {
-      display: flex;
+      .menú-otros {
+        display: block;
+      }
+
+      .menú-otros a {
+        color: #ffffff;
+        font-size: 2.2rem;
+      }
+
+      &.active ul {
+        background-color: #239;
+        display: flex;
+        align-items: center;
+        padding: 0;
+      }
+
+      ul {
+        li {
+          margin: 15px 0;
+        }
+      }
     }
   }
 
-  /* Sección de spam */
   .spam {
-    padding: 0.7rem;
+    padding: 0.6rem;
+
     h3 {
       font-size: 1.1rem;
       text-align: center;
@@ -136,7 +162,7 @@ a{
     }
   }
 
-  /* Footer */
+  // Footer
   footer {
     .tittle-footer {
       h3 {
@@ -150,9 +176,8 @@ a{
         margin-top: 0.5rem;
       }
 
-      iframe {
-        width: 100%;
-        height: 220px;
+      .iframe {
+        height: auto;
       }
     }
 
